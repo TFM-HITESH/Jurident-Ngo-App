@@ -90,9 +90,8 @@ const Header = () => {
                     </div>
                     <nav className="mx-6 items-center space-x-4 lg:space-x-3 hidden md:block font-light font-mono">
                         {routes.map((route, i) => (
-                            <Button asChild variant="ghost">
+                            <Button asChild variant="ghost" key={i}>
                                 <Link
-                                    key={i}
                                     href={route.href}
                                     className="text-lg md:text-xl font-medium transition-colors"
                                 >
