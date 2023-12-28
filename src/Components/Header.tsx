@@ -5,10 +5,11 @@ import Image from 'next/image'
 import { useTheme } from 'next-themes'
 import Container from './ui/container'
 import { Button } from './ui/button'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import { Sheet, SheetContent, SheetTrigger } from '@/Components/ui/sheet'
 import { CircleDollarSign, Menu, Moon, ShoppingCart, Sun } from 'lucide-react'
 import ProfileButton from './ui/ProfileButton'
 import BetterProfileButton from './BetterProfileButton'
+import BetterLogoButton from './BetterLogoButton'
 
 const Header = () => {
     const { theme, setTheme } = useTheme()
@@ -44,7 +45,7 @@ const Header = () => {
     ]
 
     return (
-        <header className="sm:flex sm:justify-between py-3 px-1 border-b">
+        <header className="fixed z-50 w-full sm:flex sm:justify-between py-3 px-1 bg-black/70 md:bg-blur-md">
             <Container>
                 <div className="relative px-4 sm:px-6 lg:px-1 flex h-16 items-center justify-between w-full">
                     <div className="flex items-center">
@@ -56,7 +57,7 @@ const Header = () => {
                                 side="left"
                                 className="w-[300px] sm:w-[400px]"
                             >
-                                <nav className="flex flex-col gap-4">
+                                <nav className="flex flex-col gap-4 font-mono">
                                     {routes.map((route, i) => (
                                         <Link
                                             key={i}
@@ -70,25 +71,30 @@ const Header = () => {
                             </SheetContent>
                         </Sheet>
 
-                        <Link href="/" className="ml-4 lg:ml-0">
+                        {/* <Link href="/" className="ml-4 lg:ml-0">
                             <Image
                                 src="/Images/PacificoLogo.png"
                                 width={100}
                                 height={100}
                                 alt="Picture of the author"
                             />
-                        </Link>
+                        </Link> */}
+                        <div className='sm:ml-10'>
+                            <BetterLogoButton />
+                        </div>
+                        
+                        
                         {/* <Link href="/" className="ml-4 lg:ml-0">
                             <h1 className="text-xl font-bold">Pacifico Inc.</h1>
                         </Link> */}
                     </div>
-                    <nav className="mx-6 flex items-center space-x-4 lg:space-x-3 hidden md:block">
+                    <nav className="mx-6 items-center space-x-4 lg:space-x-3 hidden md:block font-light font-mono">
                         {routes.map((route, i) => (
                             <Button asChild variant="ghost">
                                 <Link
                                     key={i}
                                     href={route.href}
-                                    className="text-sm font-medium transition-colors"
+                                    className="text-lg md:text-xl font-medium transition-colors"
                                 >
                                     {route.label}
                                 </Link>

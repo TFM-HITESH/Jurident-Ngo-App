@@ -9,8 +9,6 @@ import {
 
 import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
-import LoginComponent from './LoginComponent'
-import SignupComponent from './SignupComponent'
 
 type BetterProfileButtonProps = {}
 
@@ -19,17 +17,17 @@ const BetterProfileButton: React.FC<BetterProfileButtonProps> = () => {
         <Sheet>
             <SheetTrigger>
                 <Avatar>
-                    <AvatarImage src="/Images/ProfilePic.jpeg/" />
+                    <AvatarImage src="/Images/PacificoLogo.png" />
                     <AvatarFallback>PFP</AvatarFallback>
                 </Avatar>
             </SheetTrigger>
-            <SheetContent>
+            <SheetContent side='left'>
                 <SheetHeader>
-                    <SheetTitle></SheetTitle>
+                    <SheetTitle>Are you sure absolutely sure?</SheetTitle>
                     <SheetDescription>
-                        {/* Login and Signup Components */}
-                        <LoginComponent />
-                        <SignupComponent />
+                        This action cannot be undone. This will permanently
+                        delete your account and remove your data from our
+                        servers.
                     </SheetDescription>
                 </SheetHeader>
             </SheetContent>

@@ -24,8 +24,8 @@ const VideoPage: React.FC = () => {
 
       {/* Hero Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center font-lilita text-black">
-        <h1 className="text-8xl font-bold mb-4">Pacifico INC.</h1>
-        <p className="text-3xl">#MarineLivesMatter</p>
+        <h1 className="text-7xl md:text-4xl lg:text-8xl  font-bold mb-4">PACIFICO</h1>
+        <p className="text-3xl md:text-4xl lg:text-4xl">#MarineLivesMatter</p>
       </div>
     </div>
   );

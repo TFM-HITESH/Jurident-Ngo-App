@@ -5,12 +5,16 @@ import ContactUsSection from '@/Pages/ContactUsSection'
 import TestPage from '@/Pages/TestPage'
 import VideoPage from '@/Pages/VideoPage'
 import Image from 'next/image'
+import { Button } from '@/Components/ui/button'
 
 export default function Home() {
   return (
     <main className='scroll-smooth'>
-      <Header />
+      <div>
+        <Header />
+      </div>
       <div id='home' className='scroll-smooth'>
+        
         <VideoPage />
         
         <TestPage />
@@ -18,19 +22,21 @@ export default function Home() {
       <div id='aboutus' className='scroll-smooth'>
         <AboutUsSection />
       </div>
-      <div id='aboutus' className='scroll-smooth'>
+      <div id='projects' className='scroll-smooth'>
         <AboutUsSection />
       </div>
-      <div id='aboutus' className='scroll-smooth'>
+      <div id='getinvolved' className='scroll-smooth'>
         <AboutUsSection />
       </div>
-      <div id='aboutus' className='scroll-smooth'>
+      <div id='events' className='scroll-smooth'>
         <AboutUsSection />
       </div>
-      <div id='aboutus' className='scroll-smooth'>
+      <div id='blognnews' className='scroll-smooth'>
         <AboutUsSection />
       </div>
-      
+      <Button variant='secondary'>
+        Hello
+      </Button>
       <ContactUsSection />
       
 

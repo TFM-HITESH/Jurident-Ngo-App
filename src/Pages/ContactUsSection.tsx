@@ -7,8 +7,8 @@ import {
     DrawerHeader,
     DrawerTitle,
     DrawerTrigger,
-} from '@/components/ui/drawer'
-import { Button } from '@/components/ui/button'
+} from '@/Components/ui/drawer'
+import { Button } from '@/Components/ui/button'
 
 import React from 'react'
 
