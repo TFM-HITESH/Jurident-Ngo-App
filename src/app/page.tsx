@@ -1,5 +1,5 @@
 import Header from '@/Components/Header'
-import Navbar from '@/Components/Navbar'
+// import Navbar from '@/Components/Navbar'
 import AboutUsSection from '@/Pages/AboutUsSection'
 import ContactUsSection from '@/Pages/ContactUsSection'
 import TestPage from '@/Pages/TestPage'
