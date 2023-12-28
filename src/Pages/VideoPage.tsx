@@ -1,5 +1,6 @@
 // pages/index.tsx
 
+import HoverButton from '@/Components/HoverButton';
 import React from 'react';
 
 const VideoPage: React.FC = () => {
@@ -26,6 +27,7 @@ const VideoPage: React.FC = () => {
       <div className="absolute inset-0 flex flex-col items-center justify-center font-lilita text-black">
         <h1 className="text-7xl md:text-4xl lg:text-8xl  font-bold mb-4">PACIFICO</h1>
         <p className="text-3xl md:text-4xl lg:text-4xl">#MarineLivesMatter</p>
+        <HoverButton />
       </div>
     </div>
   );

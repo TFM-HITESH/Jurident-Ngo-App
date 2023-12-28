@@ -10,6 +10,11 @@ import { CircleDollarSign, Menu, Moon, ShoppingCart, Sun } from 'lucide-react'
 import ProfileButton from './ui/ProfileButton'
 import BetterProfileButton from './BetterProfileButton'
 import BetterLogoButton from './BetterLogoButton'
+import {
+    HoverCard,
+    HoverCardContent,
+    HoverCardTrigger,
+} from '@/Components/ui/hover-card'
 
 const Header = () => {
     const { theme, setTheme } = useTheme()
@@ -57,7 +62,7 @@ const Header = () => {
                                 side="left"
                                 className="w-[300px] sm:w-[400px]"
                             >
-                                <nav className="flex flex-col gap-4 font-mono">
+                                <nav className="flex flex-col gap-4 font-single">
                                     {routes.map((route, i) => (
                                         <Link
                                             key={i}
@@ -79,21 +84,20 @@ const Header = () => {
                                 alt="Picture of the author"
                             />
                         </Link> */}
-                        <div className='sm:ml-10'>
+                        <div className="sm:ml-10">
                             <BetterLogoButton />
                         </div>
-                        
-                        
+
                         {/* <Link href="/" className="ml-4 lg:ml-0">
                             <h1 className="text-xl font-bold">Pacifico Inc.</h1>
                         </Link> */}
                     </div>
-                    <nav className="mx-6 items-center space-x-4 lg:space-x-3 hidden md:block font-light font-mono">
+                    <nav className="mx-6 items-center space-x-4 lg:space-x-3 hidden md:block font-light font-single">
                         {routes.map((route, i) => (
                             <Button asChild variant="ghost" key={i}>
                                 <Link
                                     href={route.href}
-                                    className="text-lg md:text-xl font-medium transition-colors"
+                                    className="text-lg md:text-lg font-medium transition-colors"
                                 >
                                     {route.label}
                                 </Link>
@@ -104,19 +108,28 @@ const Header = () => {
                         <Button
                             variant="secondary"
                             size="icon"
-                            className="mr-2"
+                            className="mr-10"
                             aria-label="Donate Now !"
                         >
-                            <div className='flex p-2'>
-                                <CircleDollarSign className="h-6 w-6" />
-                                <span className="sr-only">Donate Now !</span>
-                            </div>
-                            Donate Now !
-                            
+                            <HoverCard>
+                                <HoverCardTrigger>
+                                    <div className="flex px-2">
+                                        <CircleDollarSign className="h-10 w-10 font-single" />
+                                        <span className="sr-only">
+                                            Donate Now !
+                                        </span>
+                                    </div>
+                                </HoverCardTrigger>
+                                <HoverCardContent>
+                                    <div className="w-full h-full rounded-lg">
+                                        Hello
+                                    </div>
+                                </HoverCardContent>
+                            </HoverCard>
+
+                            <BetterProfileButton />
                         </Button>
-                    </div>
-                    <div>
-                        <BetterProfileButton />
+                        <div></div>
                     </div>
                 </div>
             </Container>

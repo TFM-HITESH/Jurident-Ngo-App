@@ -6,6 +6,7 @@ import TestPage from '@/Pages/TestPage'
 import VideoPage from '@/Pages/VideoPage'
 import Image from 'next/image'
 import { Button } from '@/Components/ui/button'
+import TestCard from '@/Components/TestCard'
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
         Hello
       </Button>
       <ContactUsSection />
+      <TestCard />
       
 
     </main>

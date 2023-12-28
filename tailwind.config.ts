@@ -74,7 +74,7 @@ module.exports = {
       fontFamily: {
         'lilita' : ['Lilita One'],
         'mont' : ['Montserrat Alternates', 'sans-serif'],
-        'rubik' : ['Rubik Doodle Shadow'],
+        'single' : ['Single Day', 'cursive'],
       }
     },
   },

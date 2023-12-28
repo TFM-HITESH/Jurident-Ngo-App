@@ -27,4 +27,140 @@ body {
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Single+Day&display=swap');
+
+
+@keyframes glowing-opacity {
+  0% {
+    box-shadow: 0 0 15px #16dfe3;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  5% {
+    box-shadow: 0 0 15px #16dfe3;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  10% {
+    box-shadow: 0 0 15px #16dfe3;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  15% {
+    box-shadow: 0 0 15px #00c8dc;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  20% {
+    box-shadow: 0 0 15px #00b1d3;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  25% {
+    box-shadow: 0 0 15px #0099c9;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  30% {
+    box-shadow: 0 0 15px #0082bc;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  35% {
+    box-shadow: 0 0 15px #006bac;
+    opacity: 1;
+    /*border: 2px solid rgba(109, 109, 109, 0.7);*/
+  }
+  40% {
+    box-shadow: 0 0 15px #00549a;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  45% {
+    box-shadow: 0 0 15px #003e85;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  50% {
+    box-shadow: 0 0 15px #00276e;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  55% {
+    box-shadow: 0 0 15px #071055;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  60% {
+    box-shadow: 0 0 15px #00276e;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  65% {
+    box-shadow: 0 0 15px #003e85;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  70% {
+    box-shadow: 0 0 15px #00549a;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  75% {
+    box-shadow: 0 0 15px #006bac;
+    opacity: 1;
+    /*border: 2px solid rgba(109, 109, 109, 0.7);*/
+  }
+  80% {
+    box-shadow: 0 0 15px #0082bc;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  85% {
+    box-shadow: 0 0 15px #0099c9;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  90% {
+    box-shadow: 0 0 15px #00b1d3;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  95% {
+    box-shadow: 0 0 15px #00c8dc;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  100% {
+    box-shadow: 0 0 15px #16dfe3;
+    opacity: 1;
+    /*border: 2px solid rgba(1, 2, 0, 0.7);*/
+  }
+  
+}
+
+.animate-glow-opacity {
+  transition-duration: 300ms;
+}
+
+.animate-glow-opacity:hover {
+  animation: glowing-opacity 10s infinite;
+  transition-duration: 300ms;
+}
+
+/* styles/glassmorphism.css */
+.glass-button {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
