@@ -21,9 +21,9 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = () => {
                 <DrawerTrigger><Button variant={'destructive'}>Open</Button></DrawerTrigger>
                 <DrawerContent>
                     <DrawerHeader>
-                        <DrawerTitle>Are you sure absolutely sure?</DrawerTitle>
+                        <DrawerTitle>Contact Us</DrawerTitle>
                         <DrawerDescription>
-                            This action cannot be undone.
+                            Your Email
                         </DrawerDescription>
                     </DrawerHeader>
                     <DrawerFooter>

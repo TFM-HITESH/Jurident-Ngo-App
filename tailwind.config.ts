@@ -75,6 +75,7 @@ module.exports = {
         'lilita' : ['Lilita One'],
         'mont' : ['Montserrat Alternates', 'sans-serif'],
         'single' : ['Single Day', 'cursive'],
+        'pacifico' : ['Pacifico', 'cursive'],
       }
     },
   },

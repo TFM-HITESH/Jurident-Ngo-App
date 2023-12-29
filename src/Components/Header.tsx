@@ -62,7 +62,7 @@ const Header = () => {
                                 side="left"
                                 className="w-[300px] sm:w-[400px]"
                             >
-                                <nav className="flex flex-col gap-4 font-single">
+                                <nav className="flex flex-col gap-4 font-lilita">
                                     {routes.map((route, i) => (
                                         <Link
                                             key={i}
@@ -92,7 +92,7 @@ const Header = () => {
                             <h1 className="text-xl font-bold">Pacifico Inc.</h1>
                         </Link> */}
                     </div>
-                    <nav className="mx-6 items-center space-x-4 lg:space-x-3 hidden md:block font-light font-single">
+                    <nav className="mx-6 items-center space-x-4 lg:space-x-3 hidden md:block font-light font-lilita">
                         {routes.map((route, i) => (
                             <Button asChild variant="ghost" key={i}>
                                 <Link
@@ -114,7 +114,7 @@ const Header = () => {
                             <HoverCard>
                                 <HoverCardTrigger>
                                     <button className="flex px-2">
-                                        <CircleDollarSign className="h-10 w-10 font-single" />
+                                        <CircleDollarSign className="h-10 w-10 font-lilita" />
                                         <span className="sr-only">
                                             Donate Now !
                                         </span>
