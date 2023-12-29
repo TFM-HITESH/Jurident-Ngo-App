@@ -54,28 +54,28 @@ const LoginComponent: React.FC = () => {
 
             {/* Email Login Form */}
             <form className="mb-4 min-w-full">
-                <label className="block text-gray-700 mb-2 ">Email:</label>
+                <label className="block text-white/70 mb-2 ">Email:</label>
                 <input
                     type="email"
                     placeholder="Enter your email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="border border-gray-300 p-2 mb-2 min-w-full"
+                    className="border border-gray-300 p-2 mb-2 min-w-full text-black"
                 />
-                <label className="block text-gray-700 mb-2">Password:</label>
+                <label className="block text-white/70 mb-2">Password:</label>
                 <input
                     type="password"
                     placeholder="Enter your password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="border border-gray-300 p-2 mb-1 min-w-full"
+                    className="border border-gray-300 p-2 mb-1 min-w-full text-black"
                 />
             </form>
 
             <button
                 type="button"
                 onClick={handleEmailLogin}
-                className="bg-sky-500/90 hover:bg-cyan-500 transition-all duration-300 text-white p-2 rounded mb-10 min-w-full"
+                className="bg-sky-500/90 hover:bg-cyan-500 hover:scale-105 transition-all duration-300 text-white p-2 rounded mb-10 min-w-full"
             >
                 Login with Email
             </button>

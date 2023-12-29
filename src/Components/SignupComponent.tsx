@@ -18,31 +18,31 @@ const SignupComponent: React.FC = () => {
 
       {/* Signup Form */}
       <form className="mb-4 flex flex-col min-w-full">
-        <label className="block text-gray-700 mb-2">Name:</label>
+        <label className="block text-white/70 mb-2">Name:</label>
         <input
           type="text"
           placeholder="Enter your name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="border border-gray-300 p-2 mb-2"
+          className="border border-gray-300 p-2 mb-2 text-black"
         />
-        <label className="block text-gray-700 mb-2">Email:</label>
+        <label className="block text-white/70 mb-2">Email:</label>
         <input
           type="email"
           placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="border border-gray-300 p-2 mb-2"
+          className="border border-gray-300 p-2 mb-2 text-black"
         />
-        <label className="block text-gray-700 mb-2">Password:</label>
+        <label className="block text-white/70 mb-2">Password:</label>
         <input
           type="password"
           placeholder="Enter your password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="border border-gray-300 p-2 mb-4"
+          className="border border-gray-300 p-2 mb-4 text-black"
         />
-        <button type="button" onClick={handleSignup} className="bg-green-700/70 hover:bg-green-600/90 transition-all duration-300 text-white p-2 rounded">
+        <button type="button" onClick={handleSignup} className="bg-green-700/70 hover:bg-green-600/90 hover:scale-105 transition-all duration-300 text-white p-2 rounded">
           Sign Up
         </button>
       </form>

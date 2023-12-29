@@ -4,7 +4,7 @@ const AboutUsSection: React.FC = () => {
     return (
       <section id="about" className="py-16 bg-gray-100">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-semibold mb-8">About Us</h2>
+          <h2 className="text-3xl font-semibold mb-8 text-black">About Us</h2>
           <p className="text-gray-700">
             Welcome to OceanNGO! We are a passionate group of individuals dedicated to the conservation of our oceans.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget est ut elit bibendum dapibus.

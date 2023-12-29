@@ -30,7 +30,7 @@ const BetterProfileButton: React.FC<BetterProfileButtonProps> = () => {
                         <div className="font-lilita text-4xl">Pacifico</div>
                     </SheetTitle>
                     <SheetDescription>
-                        <div className="flex flex-col py-3 bg-white/5 bg-blur-md font-pacifico text-sm overflow-y-auto">
+                        <div className="flex flex-col py-3 px-2 transition-all duration-300 bg-white/5 bg-blur-md font-sans text-sm overflow-y-auto hover:bg-white/20">
                             <Image
                                 src="/Images/starfish.png"
                                 width={500}

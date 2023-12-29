@@ -11,30 +11,17 @@ import {
 import { Button } from '@/Components/ui/button'
 
 import React from 'react'
+import ContactUsButton from '@/Components/ContactUsButton'
 
 type ContactUsSectionProps = {}
 
 const ContactUsSection: React.FC<ContactUsSectionProps> = () => {
     return (
-        <div>
-            <Drawer>
-                <DrawerTrigger><Button variant={'destructive'}>Open</Button></DrawerTrigger>
-                <DrawerContent>
-                    <DrawerHeader>
-                        <DrawerTitle>Contact Us</DrawerTitle>
-                        <DrawerDescription>
-                            Your Email
-                        </DrawerDescription>
-                    </DrawerHeader>
-                    <DrawerFooter>
-                        <Button>Submit</Button>
-                        <DrawerClose>
-                            <Button variant="outline">Cancel</Button>
-                        </DrawerClose>
-                    </DrawerFooter>
-                </DrawerContent>
-            </Drawer>
-        </div>
+        <section id="about" className="py-16 bg-gray-100">
+    <div className="flex flex-auto items-center justify-center container mx-auto">
+      <ContactUsButton />
+    </div>
+  </section>
     )
 }
 export default ContactUsSection

@@ -6,7 +6,7 @@ import { useTheme } from 'next-themes'
 import Container from './ui/container'
 import { Button } from './ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/Components/ui/sheet'
-import { CircleDollarSign, Menu, Moon, ShoppingCart, Sun, Zap } from 'lucide-react'
+import { CircleDollarSign, CreditCard, Menu, Moon, ShoppingCart, Sun, Zap } from 'lucide-react'
 import ProfileButton from './ui/ProfileButton'
 import BetterProfileButton from './BetterProfileButton'
 import BetterLogoButton from './BetterLogoButton'
@@ -121,15 +121,24 @@ const Header = () => {
                                     </button>
                                 </HoverCardTrigger>
                                 <HoverCardContent>
-                                    <div className="w-full h-full rounded-lg place-content-center">
-        
-                                        <div className='flex flex-row items-center justify-center bg-purple-700 rounded-full place-content-center min-h-10 lg:min-h-10 font-bold text-md lg:text-xl px-2'>
+                                    <div className=" flex flex-col w-full h-full rounded-lg place-content-center">
+                                        <div className='text-xl font-black text-black mb-3'>
+                                            Donate Now !
+                                        </div>
+                                        <div className='flex flex-row mb-2 items-center justify-center bg-purple-600/90 hover:bg-purple-800 transition-all duration-300 hover:scale-105 rounded-full place-content-center min-h-10 lg:min-h-10 font-bold text-md lg:text-xl px-2'>
                                             <div className='mr-2'>
                                                 <Zap />
                                             </div>
                                             Stripe Payment 
                                         </div>
+                                        <div className='flex flex-row items-center justify-center bg-pink-600/80 hover:bg-pink-700 transition-all duration-300 hover:scale-105 rounded-full place-content-center min-h-10 lg:min-h-10 font-bold text-md lg:text-xl px-2'>
+                                            <div className='mr-2'>
+                                                <CreditCard />
+                                            </div>
+                                            Card Payment 
+                                        </div>
                                     </div>
+                                    
                                 </HoverCardContent>
                             </HoverCard>
 
