@@ -47,7 +47,7 @@ export default function Home() {
             <div id="blognnews" className="scroll-smooth">
                 <BlogNNewsSection />
             </div>
-            <div className="min-w-full bg-black min-h-[1px]"></div>
+            {/* <div className="min-w-full bg-[#071717] min-h-2"></div> */}
 
             <div id="contactus" className="scroll-smooth">
                 <ContactUsSection />

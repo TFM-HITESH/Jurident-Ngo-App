@@ -22,7 +22,7 @@ const FooterVideo: React.FC = () => {
       </video>
 
       {/* Content Overlay */}
-      {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
+      <div className="absolute inset-0 bg-black opacity-70"></div>
 
       {/* Hero Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center font-lilita text-black">
