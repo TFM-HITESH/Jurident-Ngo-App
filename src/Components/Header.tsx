@@ -50,7 +50,7 @@ const Header = () => {
     ]
 
     return (
-        <header className="fixed z-50 w-full sm:flex sm:justify-between py-3 px-1 bg-black/70 md:bg-blur-md">
+        <header className="fixed z-50 w-full sm:flex sm:justify-between py-3 px-1 bg-black/70 transition-all duration-300 md:bg-blur-md">
             <Container>
                 <div className="relative px-4 sm:px-6 lg:px-1 flex h-16 items-center justify-between w-full">
                     <div className="flex items-center">
