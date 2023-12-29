@@ -19,10 +19,10 @@ const HoverButton: React.FC<HoverButtonProps> = () => {
                 <div></div>
                 <HoverCardContent sideOffset={20}>
                     <div className="h-full rounded-lg font-lilita text-md">
-                        "Click to donate and be a hero for our oceans! Your
+                        Click to donate and be a hero for our oceans! Your
                         support removes tons of ocean plastic, preserving marine
                         life. Every dollar is a powerful ripple of change. Thank
-                        you for making a difference!"
+                        you for making a difference!
                     </div>
                 </HoverCardContent>
             </HoverCard>
