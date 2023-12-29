@@ -20,12 +20,9 @@ const ContactUsButton: React.FC<ContactUsSectionProps> = () => {
             <Drawer>
                 <DrawerTrigger>
                     <div className="flex flex-row p-2 items-center align-center min-w-screen">
-                        <button className="font-lilita text-4xl px-7 py-2 mt-10 transition duration-300 ease-in-out bg:opacity-50 bg-stone-300 transform hover:bg-red-700 hover:text-black hover:shadow-lg hover:scale-110 hover:rounded-md hover:opacity-100 animate-glow-opacity">
+                        <button className="font-lilita text-4xl px-7 py-4 transition duration-300 ease-in-out bg:opacity-50 bg-stone-300 transform hover:bg-red-700 hover:text-black hover:shadow-lg hover:scale-110 hover:rounded-md hover:opacity-100 animate-glow-opacity">
                             Contact Us !
                         </button>
-                        <div>
-                            hi
-                        </div>
                     </div>
                 </DrawerTrigger>
                 <DrawerContent>
