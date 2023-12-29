@@ -171,12 +171,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #141414b1; /* Color of the thumb */
+  background-color: #18191b98; /* Color of the thumb */
   border-radius: 4px; /* Rounded corners */
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #f4f9f9e0; /* Color of the track */
+  background-color: #c8f3f5bd; /* Color of the track */
   border-radius: 2px;
 }
 

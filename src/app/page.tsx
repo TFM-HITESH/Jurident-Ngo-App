@@ -14,7 +14,7 @@ import BlogNNewsSection from '@/Pages/BlogNNewsSection'
 
 export default function Home() {
     return (
-        <main className="scroll-smooth">
+        <main className="flex flex-col scroll-smooth max-w-screen">
             <div>
                 <Header />
             </div>
@@ -53,6 +53,8 @@ export default function Home() {
                 <ContactUsSection />
             </div>
             <div className="min-w-full bg-black min-h-[1px]"></div>
+
+            {/* <TestPage /> */}
         </main>
     )
 }
