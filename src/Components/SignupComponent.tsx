@@ -13,11 +13,11 @@ const SignupComponent: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center">
-      <h2 className="text-2xl font-bold mb-4">Sign Up</h2>
+    <div className="flex flex-col items-center font-lilita ">
+      <h2 className="text-2xl font-bold mb-1">Sign Up</h2>
 
       {/* Signup Form */}
-      <form className="mb-4 flex flex-col">
+      <form className="mb-4 flex flex-col min-w-full">
         <label className="block text-gray-700 mb-2">Name:</label>
         <input
           type="text"
@@ -42,7 +42,7 @@ const SignupComponent: React.FC = () => {
           onChange={(e) => setPassword(e.target.value)}
           className="border border-gray-300 p-2 mb-4"
         />
-        <button type="button" onClick={handleSignup} className="bg-green-500 text-white p-2 rounded">
+        <button type="button" onClick={handleSignup} className="bg-green-700/70 hover:bg-green-600/90 transition-all duration-300 text-white p-2 rounded">
           Sign Up
         </button>
       </form>
