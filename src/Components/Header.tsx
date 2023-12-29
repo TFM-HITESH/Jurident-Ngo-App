@@ -6,7 +6,7 @@ import { useTheme } from 'next-themes'
 import Container from './ui/container'
 import { Button } from './ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/Components/ui/sheet'
-import { CircleDollarSign, Menu, Moon, ShoppingCart, Sun } from 'lucide-react'
+import { CircleDollarSign, Menu, Moon, ShoppingCart, Sun, Zap } from 'lucide-react'
 import ProfileButton from './ui/ProfileButton'
 import BetterProfileButton from './BetterProfileButton'
 import BetterLogoButton from './BetterLogoButton'
@@ -113,16 +113,22 @@ const Header = () => {
                         >
                             <HoverCard>
                                 <HoverCardTrigger>
-                                    <div className="flex px-2">
+                                    <button className="flex px-2">
                                         <CircleDollarSign className="h-10 w-10 font-single" />
                                         <span className="sr-only">
                                             Donate Now !
                                         </span>
-                                    </div>
+                                    </button>
                                 </HoverCardTrigger>
                                 <HoverCardContent>
-                                    <div className="w-full h-full rounded-lg">
-                                        Hello
+                                    <div className="w-full h-full rounded-lg place-content-center">
+        
+                                        <div className='flex flex-row items-center justify-center bg-purple-700 rounded-full place-content-center min-h-10 lg:min-h-10 font-bold text-md lg:text-xl px-2'>
+                                            <div className='mr-2'>
+                                                <Zap />
+                                            </div>
+                                            Stripe Payment 
+                                        </div>
                                     </div>
                                 </HoverCardContent>
                             </HoverCard>
